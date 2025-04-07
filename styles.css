@@ -1,0 +1,91 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #000000); /* أو مجرد background-color: black; */
+    color: rgba(255, 255, 255, 0);
+}
+
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;  /* تقليل padding لجعل الهيدر أصغر */
+    background-color: #171717;
+    height: 60px;  /* تعيين ارتفاع ثابت للهيدر */
+}
+
+header .nav-left a {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(to right, #e4d3ae, #e6c051); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    text-decoration: none;
+}
+
+header .logo img {
+    width: 800px;
+    height: auto;
+    margin-right: -280px;
+    margin-top: 5px;  /* تحريك اللوجو لأعلى */
+    margin-bottom: -18px;
+}
+
+
+/* Main content */
+.main-content {
+    text-align: center;
+}
+
+.background {
+    background-image: url('background.png'); /* أو اسم الصورة اللي عندك */
+    background-size: cover;            /* تغطي كل الشاشة */
+    background-position: center;       /* الصورة تكون في منتصف الشاشة */
+    background-repeat: no-repeat;      /* ما تتكرر الصورة */
+    width: 100vw;                      /* 100% من عرض الشاشة */
+    height: 100vh;                     /* 100% من ارتفاع الشاشة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.main-content .background h1 {
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;  /* Allow multiple rows if needed */
+}
+
+.menu {
+    margin: 0;
+    flex: 1 1 45%; /* 2 images per row, adjust as needed */
+    text-align: center;
+}
+
+.menu img {
+    width: 100%;
+    height: auto;
+    margin: 0;  /* Remove space between images */
+}
+
+
